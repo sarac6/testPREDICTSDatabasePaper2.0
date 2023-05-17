@@ -1,14 +1,15 @@
 
 # PREDICTSDatabasePaper2.0  
-**PI**:Sara Contu & Gareth Thomas  
-**Analyst**:Sara Contu  
+**PI**: Sara Contu & Gareth Thomas  
+**Analyst**: Sara Contu 
 
 
 This repo contains the models and analysis that compare the results from the first database paper and the new addition and changes made to the PREDICTS database since 2016.
 
 This work is aimed at testing:
- - whether and in what measure the addition of over 1 million biodiverstiy measures contribute to estimates biodiversity indices with higher confidence
+ - whether and in what measure the addition of over 1 million biodiverstiy measures contribute to estimate biodiversity indices with higher confidence
  - whether and in what measure the recuration of the sampling site to a more finely resolved land use classes classification (LUH2) contributes towards capturing biodiversity responses and processes at a finer scale.
+
 
 
 ## Folders in this repo
@@ -24,4 +25,4 @@ tmp | contains temporary files for terra applications
 
 
 ## N.B. 
-At this stage this is a repo where I am starting thinkering with data, models and analisys, as you may be aware I have never done much of it before. So if you feel you would like to throw advices, suggestions and even mild insult at my code, markdown etc. please do, anything that could helping me making progress is welcome!
+At this stage this is a repo where I am starting thinkering with data, models and analisys, as you may be aware I have never done much of it before. So if you feel you would like to throw advices, suggestions and even mild insult at my code, markdown etc. please do, anything that could help me making progress is welcome!
