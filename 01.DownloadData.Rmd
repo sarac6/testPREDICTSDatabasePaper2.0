@@ -1,0 +1,38 @@
+---
+title: "01.DownloadData"
+author: "Sara Contu"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    code_folding: hide
+ 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r echo=FALSE, message=FALSE}
+  # install and load packages
+
+  library("dplyr")
+ 
+```
+
+1. Download and load PREDICTS 2016 release data (olddb hereafter). The data has been downloaded from the [NHM data portal 2016 release](https://data.nhm.ac.uk/dataset/the-2016-release-of-the-predicts-database)
+
+```{r }
+
+  olddb <- readRDS("Data/database1strelease.rds")
+
+```
+2. Download and load PREDICTS November 2022 release data (novdb hereafter). The data can be downloaded from the [NHM data portal](https://data.nhm.ac.uk/dataset/release-of-data-added-to-the-predicts-database-november-2022)
+
+```{r }
+
+  novdb <- readRDS("Data/database2ndrelease.rds")
+
+```
+
