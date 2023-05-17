@@ -11,7 +11,7 @@ This work is aimed at testing:
  - whether and in what measure the recuration of the sampling site to a more finely resolved land use classes classification (LUH2) contributes towards capturing biodiversity responses and processes at a finer scale.
 
 
-# Folders in this repo
+## Folders in this repo
 File | Description
 ---|----------------------------------------------------------
 data | contains all input data (and metadata) used in the analysis
@@ -21,3 +21,7 @@ output | contains any type of intermediate or output files
 R | contains R scripts with function definitions
 reports | contains RMarkdown files that document the analysis or report on results           
 tmp | contains temporary files for terra applications
+
+
+## N.B. 
+At this stage this is a repo where I am starting thinkering with data, models and analisys, as you may be aware I have never done much of it before. So if you feel you would like to throw advices, suggestions and even mild insult at my code, markdown etc. please do, anything that could helping me making progress is welcome!
