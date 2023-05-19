@@ -23,28 +23,59 @@ knitr::opts_chunk$set(echo = TRUE)
  
 ```
 
- Load the datasets
-
-1. Download and load PREDICTS 2016 release data (olddb hereafter). The data has been downloaded from the [NHM data portal 2016 release](https://data.nhm.ac.uk/dataset/the-2016-release-of-the-predicts-database).
 
 
+
+# Source relevant data
+
+This work is aimed at addressing:
+
+"How much difference is made in model fit and projected BII by new data, LUH2 recuration and taxon-level random effect?"
+
+Old data vs old + new data LUH1 (mod1 ~ mod2) {2016 MODELS}
+
+Old data vs old + new data LUH2 (mod3 ~ mod4) {2016 MODELS}
+
+Old data vs old + new data LUH1 (mod5 ~ mod6) {2016 MODELS + Taxon-fold}
+
+Old data vs old + new data LUH2 (mod7 ~ mod8) {2016 MODELS + Taxon-fold}
+
+Below I list the data and sources of data necessary for this analysis. 
+N.B. This list will grow and change as i get more in the analysis. please feel free to add to the list.
+
+
+## Database release 2016 with old LUH1
+  -  Download and load PREDICTS 2016 release data (olddb hereafter) from the [NHM data portal 2016 release](https://data.nhm.ac.uk/dataset/the-2016-release-of-the-predicts-database).
+  
+  
 ```{r }
 
   olddb <- readRDS("Data/database1strelease.rds")
 
 
 ```
-2. Download and load PREDICTS November 2022 release data (novdb hereafter). The data can be downloaded from the [NHM data portal](https://data.nhm.ac.uk/dataset/release-of-data-added-to-the-predicts-database-november-2022)
+  
 
+## Database release 2016 LUH2
+  - need to ask Andy/Adriana 
+  
+## Database release 2022 LUH1 
+  -Download and load PREDICTS November 2022 release data (novdb hereafter) from the [NHM data portal](https://data.nhm.ac.uk/dataset/release-of-data-added-to-the-predicts-database-november-2022)
 ```{r }
 
   novdb <- readRDS("Data/database2ndrelease.rds")
 
 
 ```
+  
+## Database release 2022 LUH2
+   - need to ask Andy/Adriana 
 
+## (Database release 2016 with new LUH1 (some studies may have been recurated - so check for any diff))
+  - download the database extract from psql-predicts and filter for 2016 database release sources to compare difference in LUH1 with the old version)
+  
 
-## Explore the data 
+# Explore the data - preparation for modelling
 
  - source ID
  - number of sites (SSBS)
@@ -84,3 +115,5 @@ knitr::opts_chunk$set(echo = TRUE)
   
 
 ```
+
+
